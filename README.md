@@ -1,69 +1,161 @@
-# EduFriend
+# EduFriend – Full-Stack Learning Platform
 
-EduFriend is a web-based application designed to enhance the learning experience for students and teachers. It provides features such as study materials, quizzes, performance tracking, and growth analytics. The application consists of a **frontend** built with React and a **backend** powered by Flask, integrated with Firebase for authentication and database management.
+## Overview
+
+EduFriend is a cloud-based learning platform designed to help students access study materials, take quizzes, track academic performance, and monitor learning progress through a centralized dashboard.
+
+The platform combines a React frontend with Flask REST APIs and Firebase services to provide a secure and scalable learning experience.
 
 ---
 
-## Features
+## Problem Statement
 
-### Frontend
-- **Splash Screen**: A visually appealing splash screen with animations.
-- **Student Dashboard**: Displays study materials, quizzes, and performance analytics.
-- **Login System**: Firebase-based authentication for secure login.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
+Students often use multiple tools for learning resources, quizzes, and performance tracking, creating a fragmented learning experience.
 
-### Backend
-- **Flask API**: Provides endpoints for user authentication, study materials, and analytics.
-- **Firebase Integration**: Manages user authentication and real-time database.
-- **CORS Configuration**: Ensures secure communication between frontend and backend.
-- **Cloud Run Deployment**: Backend is deployed on Google Cloud Run for scalability.
+EduFriend addresses this challenge by providing:
+
+* Centralized study materials
+* Interactive quizzes
+* Performance analytics
+* Secure authentication
+* Cloud-hosted accessibility
+
+---
+
+## System Architecture
+
+```text
+React Frontend
+      │
+      ▼
+ Flask REST APIs
+      │
+      ▼
+ Firebase Authentication
+      │
+      ▼
+ Firestore Database
+      │
+      ▼
+ Google Cloud Run Deployment
+```
+
+---
+
+## Key Features
+
+### User Authentication
+
+* Firebase Authentication
+* Secure login and session management
+* Protected routes
+
+### Learning Dashboard
+
+* Student dashboard
+* Study material management
+* Progress tracking
+
+### Quiz System
+
+* Interactive quizzes
+* Score tracking
+* Performance evaluation
+
+### Analytics
+
+* Academic progress monitoring
+* Learning insights
+* Performance visualization
+
+### Cloud Deployment
+
+* Backend containerized using Docker
+* Deployed on Google Cloud Run
+* Frontend hosted using Firebase Hosting
 
 ---
 
 ## Tech Stack
 
 ### Frontend
-- **React**: JavaScript library for building user interfaces.
-- **Firebase**: Authentication and database integration.
-- **Axios**: For making API requests.
-- **CSS**: Custom styles for a modern and responsive design.
+
+* React
+* JavaScript
+* Axios
+* CSS
 
 ### Backend
-- **Flask**: Python web framework for building APIs.
-- **Firebase Admin SDK**: For backend Firebase operations.
-- **Google Cloud Run**: For deploying the backend as a serverless application.
+
+* Flask
+* Python
+* REST APIs
+
+### Database & Authentication
+
+* Firebase Authentication
+* Firestore Database
+
+### Cloud & DevOps
+
+* Docker
+* Google Cloud Run
+* Firebase Hosting
 
 ---
 
-## Installation
+## Repository Structure
 
-### Prerequisites
-- **Node.js**: Install from [Node.js](https://nodejs.org/).
-- **Python 3.9+**: Install from [Python](https://www.python.org/).
-- **Google Cloud SDK**: Install from [Google Cloud SDK](https://cloud.google.com/sdk).
-
----
+```text
 EduFriend/
+│
 ├── backend/
 │   ├── app.py
 │   ├── requirements.txt
 │   ├── Dockerfile
-│   └── .env
+│
 ├── frontend/
 │   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Login.js
-│   │   │   ├── Dashboard.js
-│   │   │   └── SplashScreen.js
-│   │   ├── App.js
-│   │   └── index.js
 │   ├── public/
-│   ├── .env
 │   ├── package.json
-│   └── README.md
+│
+├── firebase.json
+├── README.md
+```
 
-LiveDemo:https://edufriend-web-app.web.app/login
+---
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
+## Live Demo
+
+Frontend:
+https://edufriend-web-app.web.app/login
+
+---
+
+## Engineering Highlights
+
+* Designed full-stack architecture using React and Flask
+* Built RESTful APIs for learning workflows
+* Implemented secure authentication using Firebase
+* Containerized backend services using Docker
+* Deployed cloud-native backend on Google Cloud Run
+* Integrated Firestore for real-time data storage
+
+---
+
+## Future Improvements
+
+* Role-based access control (RBAC)
+* AI-powered learning recommendations
+* Personalized study plans
+* Advanced analytics dashboard
+* Microservices architecture
+* CI/CD automation
+
+---
+
+## Author
+
+Aryanmouli Cherupalli
+
+Software Engineer | Java | Spring Boot | React | Cloud | AI Applications
